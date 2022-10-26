@@ -7,7 +7,7 @@ use App\Models\Province;
 use Illuminate\Http\Request;
 use Datatables;
 
-class ProvinceControlller extends Controller
+class ProvinceController extends Controller
 {
     public function index()
     {
