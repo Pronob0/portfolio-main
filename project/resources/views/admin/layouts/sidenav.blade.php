@@ -15,9 +15,15 @@
             <li class="nav-item">
               <a class="nav-link" href="examples/dashboard.html">
                 <i class="ni ni-tv-2 text-primary"></i>
-                <span class="nav-link-text text-light">Dashboard</span>
+                <span class="nav-link-text text-light">@lang('Dashboard')</span>
               </a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{ route('admin.province.index') }}">
+                <i class="ni ni-building text-blue"></i>
+                <span class="nav-link-text text-light">@lang('Manage Province')</span>
+              </a>
             {{-- order side menu --}}
             <li class="nav-item ">
               <a class="nav-link "  href="#ordermenu" data-toggle="collapse" aria-expanded="false"  >
@@ -26,19 +32,10 @@
               </a>
               <div id='ordermenu' class="collapse sidebar-submenu ">
                 <a href="#" class="list-group-item list-group-item-action bg-info">
-                    <span class=" menu-collapsed nav-link-text ">{{ __('All Orders') }}</span>
+                    <span class=" menu-collapsed nav-link-text ">{{ __('Orders') }}</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action bg-info">
-                    <span class="  menu-collapsed ">{{ __('Pending Orders') }}</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action bg-info">
-                    <span class="  menu-collapsed ">{{ __('Processing Orders') }}</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action bg-info">
-                    <span class="  menu-collapsed ">{{ __('Completed Orders') }}</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action bg-info">
-                    <span class="  menu-collapsed ">{{ __('Declined Orders') }}</span>
+                    <span class="  menu-collapsed ">{{ __('Transactions') }}</span>
                 </a>
             </div>
             </li>

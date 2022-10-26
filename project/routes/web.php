@@ -31,6 +31,15 @@ Route::group(['as'=>'admin.', 'prefix'=>'admin','namespace'=>'Admin',['middlewar
     Route::get('/change_profile','DashboardController@ProfileEdit')->name('change-profile');
     Route::post('/profile-update','DashboardController@profileupdate')->name('profile.update');
 
+
+    //Manage Province Route
+    Route::get('/province/datatables','ProvinceController@datatable')->name('province.datatables');
+    Route::get('/province','ProvinceController@index')->name('province.index');
+
+    //Manage Province Route Ends
+
+
+
     // Gig category Start
     Route::get('/category','CategoryController@index')->name('category');
     Route::post('/category','CategoryController@store')->name('category.store');
